@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 void main() {
   //TODO: run your app here
   runApp(
-    Text(
-      "Hello flutter",
-      textDirection: TextDirection.ltr,
+    Center(
+      child: Text(
+        "Hello flutter",
+        textDirection: TextDirection.ltr,
+      ),
     ),
   );
 }
