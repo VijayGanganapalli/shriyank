@@ -1,6 +1,6 @@
 //TODO: import librarary
 import 'package:flutter/material.dart';
-import 'app_screens/first_screen.dart';
+import 'app_screens/home_screen.dart';
 
 //TODO: create main method
 void main() => runApp(MyApp());
@@ -10,12 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Tutorial",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Tutorial"),
-        ),
-        body: FirstScreen(),
-      ),
+      home: HomeScreen(),
     );
   }
 }
