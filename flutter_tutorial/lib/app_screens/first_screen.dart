@@ -10,7 +10,12 @@ class FirstScreen extends StatelessWidget {
         child: Text(
           "Flight",
           textDirection: TextDirection.ltr,
-          style: TextStyle(color: Colors.white, fontSize: 30.0),
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 30.0,
+            fontFamily: 'Ralewway',
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
     );
