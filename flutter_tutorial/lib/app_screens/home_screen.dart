@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Flutter Tutorial"),
       ),
-      body: FirstScreen(),
+      body: HomeBodyScreen(),
     );
   }
 }
