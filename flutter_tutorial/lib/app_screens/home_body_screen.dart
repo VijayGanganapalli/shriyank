@@ -5,17 +5,68 @@ class HomeBodyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
+        padding: EdgeInsets.only(left: 10.0, top: 20.0),
         alignment: Alignment.center,
         color: Colors.deepPurple,
-        child: Text(
-          "Flight",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
-            fontFamily: 'Ralewway',
-            fontWeight: FontWeight.w700,
-          ),
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Text(
+                    "Spice Jet",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 35.0,
+                      fontFamily: 'Ralewway',
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    "From Delhi to Bangalore",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Ralewway',
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Text(
+                    "Air India",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 35.0,
+                      fontFamily: 'Ralewway',
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    "From Bangalore to Goa via Mumbai",
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'Ralewway',
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
