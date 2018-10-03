@@ -66,6 +66,14 @@ class HomeBodyScreen extends StatelessWidget {
                 ),
               ],
             ),
+            Container(
+              alignment: Alignment.center,
+              child: Image.asset(
+                "images/flight.png",
+                height: 200.0,
+                width: 250.0,
+              ),
+            ),
           ],
         ),
       ),
