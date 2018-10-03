@@ -63,7 +63,7 @@ flutter:
           style: italic
     - family: Roboto
       fonts:
-        - asset: fonts/Roboto.ttf
+        - asset: fonts/Roboto-Regular.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,
