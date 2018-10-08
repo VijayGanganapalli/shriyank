@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './home_body_screen.dart';
+import './flight_book_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Flutter Tutorial"),
       ),
-      body: HomeBodyScreen(),
+      body: FlightBookScreen(),
     );
   }
 }
