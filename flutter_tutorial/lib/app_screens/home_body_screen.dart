@@ -81,17 +81,7 @@ class HomeBodyScreen extends StatelessWidget {
               height: 50.0,
               child: RaisedButton(
                 color: Colors.deepOrange,
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      barrierDismissible: true,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          title: Text("Fligt booked successfully"),
-                          content: Text("Have a pleasant fligt"),
-                        );
-                      });
-                },
+                onPressed: () => buildFligtAlertDialog(context),
                 child: Text(
                   "Book your flight",
                   style: TextStyle(
@@ -106,6 +96,19 @@ class HomeBodyScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  void buildFligtAlertDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Fligt booked successfully"),
+          content: Text("Have a pleasant fligt"),
+        );
+      },
     );
   }
 }
