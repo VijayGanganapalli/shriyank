@@ -5,7 +5,7 @@ class HomeBodyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: EdgeInsets.only(left: 10.0, top: 20.0),
+        padding: EdgeInsets.only(left: 10.0, top: 10.0),
         alignment: Alignment.center,
         color: Colors.deepPurple,
         child: Column(
@@ -38,6 +38,7 @@ class HomeBodyScreen extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 10.0),
             Row(
               children: <Widget>[
                 Expanded(
@@ -72,6 +73,34 @@ class HomeBodyScreen extends StatelessWidget {
                 "images/flight.png",
                 height: 200.0,
                 width: 250.0,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 30.0),
+              width: 200.0,
+              height: 50.0,
+              child: RaisedButton(
+                color: Colors.deepOrange,
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      barrierDismissible: true,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text("Fligt booked successfully"),
+                          content: Text("Have a pleasant fligt"),
+                        );
+                      });
+                },
+                child: Text(
+                  "Book your flight",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: "Raleway",
+                      fontWeight: FontWeight.w700),
+                ),
+                elevation: 6.0,
               ),
             ),
           ],
