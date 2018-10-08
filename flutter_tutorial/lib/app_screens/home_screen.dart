@@ -9,6 +9,13 @@ class HomeScreen extends StatelessWidget {
         title: Text("Flutter Tutorial"),
       ),
       body: ListViewScreen(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          debugPrint("FAB clicked");
+        },
+        tooltip: "Add one more item",
+      ),
     );
   }
 }
